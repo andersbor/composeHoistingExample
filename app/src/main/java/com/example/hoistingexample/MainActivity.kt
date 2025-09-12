@@ -50,6 +50,7 @@ private fun MainContent(modifier: Modifier = Modifier) {
             onCountChange = { count = it },
         )
         Text(text = "Count: $count")
+
     }
 }
 
