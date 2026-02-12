@@ -75,7 +75,8 @@ fun CounterInternalState(modifier: Modifier = Modifier) {
 
 @Composable
 fun CounterHoistedState(
-    count: Int, onCountChange: (Int) -> Unit,
+    count: Int,
+    onCountChange: (Int) -> Unit,
     modifier: Modifier = Modifier
 ) {
     Column(modifier = modifier.padding(16.dp)) {
@@ -88,7 +89,7 @@ fun CounterHoistedState(
 
 @Preview(showBackground = true)
 @Composable
-fun GreetingPreview() {
+fun HoistingPreview() {
     HoistingExampleTheme {
         CounterInternalState()
     }
@@ -96,7 +97,7 @@ fun GreetingPreview() {
 
 @Preview(showBackground = true)
 @Composable
-fun GreetingPreview2() {
+fun HoistingPreview2() {
     HoistingExampleTheme {
         CounterHoistedState(count = 0, onCountChange = {})
     }
